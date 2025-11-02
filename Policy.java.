@@ -1,0 +1,161 @@
+import java.util.Scanner;
+
+   public class Policy
+{
+      
+   // Insurance policy attributes
+   private int policyNumber;
+   private String providerName;
+   private String providerFirstName;
+   private String providerFirstLastName;
+   private int policyholderAge;
+   private String policyholdersmokingStatus; // smoker or non-smoker
+   private int providerHeigh; //In inches
+   private weight providerWeight; //In pounds
+   
+ {
+    
+    
+   // Include a no-arg constructor set default values for all fields.
+   
+   public class Policy()
+   {
+     policyNumber = 0;
+     providerName = "none";
+     providerFirstName = "none";
+     providerFirstLastName = "none";
+     policyholderAge = 0;
+     policyholdersmokingStatus = "no-smoker"; 
+     providerHeigh = 0; 
+     providerWeight = 0; 
+   
+   // Include a constructor that accepts arguments
+   
+   public class Policy(int number, String provider, String firstName, String lastName, 
+                       int age, String smokingStatus, int hegiht, int weight) 
+   {
+   
+     policyNumber = number;
+     providerName = provider;
+     providerFirstName = firstname;
+     providerFirstLastName = firstlastname;
+     policyholderAge = age;
+     policyholdersmokingStatus = smokingstatus; 
+     providerHeigh = heigh; 
+     providerWeight = weight; 
+   
+      }
+   
+   //Include appropriate setters and getters
+
+   public int getpolicyNumber() 
+   {
+      return getpolicyNumber;
+   } 
+   public void setgetpolicyNumber(int number)
+   {
+      policyNumber = number;
+   }
+   
+   public String getproviderName() 
+   { 
+      return getproviderName;
+   }
+   public void setproviderName(String provider) 
+   { 
+     providerName = provider;
+   } 
+   
+   public String getproviderFirstName() 
+   { 
+      getproviderFirstName; 
+   }
+   public void setproviderFirstName(String firstName) 
+   {  
+     providerFirstName = first name; 
+   } 
+   
+   public String getproviderFirstLastName() 
+   { 
+      return getproviderFirstLastName; 
+   }
+   public void setproviderFirstLastName(String LastName) 
+   { 
+       providerFirstLastName = first last name; 
+   }
+   
+   public int policyholderAge() 
+   { 
+       return getpolicyholderAge;
+   }
+   public void setpolicyholderAge(String Age) 
+   { 
+     setpolicyholderAge = age; 
+   }
+   
+   public String getpolicyholdersmokingStatus() 
+   { 
+      return getpolicyholdersmokingStatus; 
+    }
+   public void setpolicyholdersmokingstatus(String status)
+    {
+      policyholdersmokingStatus = status; 
+    }
+   
+   public int getproviderHeigh() 
+   {
+       return getint providerHeigh; 
+   }
+   public void setproviderHeigh(String height) 
+   { 
+        providerHeigh = height; 
+   }
+   
+   public int getPolicyholderWeight() 
+   { 
+      return policyholderWeight;
+   }
+   public void setPolicyholderWeight(int weight) 
+   { 
+      policyholderWeight = weight;
+   }
+   
+   //Include a method that calculates and returns the BMI of the policyholder.
+   
+   public double getBMI()
+   { 
+      if (policyholderHeight == 0) retur 0; {
+      }
+  
+       return (policyholderWeight * 703.0) / (policyholderHegiht * policyholderWeight);
+   }     
+   
+   //Include a method that calculates and returns the price of the insurance policy* 
+   
+   public double calculatePolicyPrice() 
+ {  
+   double price = 600.00;  
+   
+      {  
+       // If the Policyholder is over 50 years old there is an additional fee of $753
+      if (policyholderAge > 50) 
+      { 
+        price += 75.0;
+        }
+        
+      if (policyholdersmokingStatu.equalsIgnoreCase ("smoker")) 
+      { 
+        price += 100.0;
+        } 
+     // Calculate the policy holder BMI of over 35 
+     double bmi = (providerWeight * 703.0) / (providerHeigh * providerweight); 
+     
+     if (bmi > 35) 
+     {
+     price += (bmi - 35) * 20.0; 
+     } 
+     return price;
+   }
+   
+}
+   
