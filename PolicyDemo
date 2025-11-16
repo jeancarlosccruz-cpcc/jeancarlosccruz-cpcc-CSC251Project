@@ -59,3 +59,4 @@ public class Demo
         System.out.println("The number of policies with a non-smoker is: " + nonSmokers);
     }
 }
+
